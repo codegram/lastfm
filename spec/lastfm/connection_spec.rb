@@ -52,7 +52,7 @@ module LastFM
       
       context "group" do
         %w{hype members weeklyalbumchart weeklyartistchart weeklychartlist weeklytrackchart}.each do |element|
-          specify "#get_#{element}_from_radiohead" do
+          specify "#get_#{element}_from_group" do
             VCR.insert_cassette "group/#{element}_from_radiohead", :record => :new_episodes
             expect {connection.send(:"get_#{element}_from_group",'radiohead')}.to_not raise_error
           end
