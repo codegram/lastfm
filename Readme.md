@@ -12,15 +12,15 @@ Compatible with Ruby 1.8, 1.9 and JRuby.
 
 Just put it in your Gemfile:
 
-  gem "lastfm"
+    gem "lastfm"
 
 Create a connection with your API key:
 
-  require 'lastfm'
+    require 'lastfm'
 
-  connection = LastFM.connect('my api key')
+    connection = LastFM.connect('my api key')
 
-  result_hash = connection.get_topalbums_from_artist('Cher')  # *yikes*
+    result_hash = connection.get_topalbums_from_artist('Cher')  # *yikes*
 
 The syntax is really simple. Last.fm grants non-authenticated access to the following
 modules of its API:
