@@ -12,7 +12,7 @@ Compatible with Ruby 1.8, 1.9 and JRuby.
 
 Just put it in your Gemfile:
 
-    gem "lastfm"
+    gem "lastfm", :git => 'git://github.com/codegram/lastfm.git'
 
 Create a connection with your API key:
 
