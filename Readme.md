@@ -35,7 +35,7 @@ modules of its API:
 * Venue
 
 To see the available methods and required arguments for each of these modules,
-please go to the Wiki.
+please [go to the Wiki](http://github.com/codegram/lastfm/wiki/Available-Last.fm-API-methods).
 
 ## Note on Patches/Pull Requests
  
