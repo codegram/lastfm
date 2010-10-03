@@ -1,0 +1,36 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://ws.audioscrobbler.com:80/2.0/?method=track.getbuylinks&api_key=0db875056888d327c24d7a76374733f4&artist=radiohead&country=united%20kingdom&format=json&track=creep
+    body: 
+    headers: 
+      accept: 
+      - "*/*"
+      user-agent: 
+      - Ruby
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      date: 
+      - Sun, 03 Oct 2010 20:53:46 GMT
+      server: 
+      - Apache/1.3.39 (Unix)
+      x-proxy-fix-up: 
+      - headers fixed up
+      x-web-node: 
+      - www147
+      cache-control: 
+      - max-age=86400
+      expires: 
+      - Mon, 04 Oct 2010 20:53:46 GMT
+      connection: 
+      - close
+      content-type: 
+      - application/json; charset=utf-8;
+    body: |
+      {"affiliations":{"physicals":{"affiliation":[{"supplierName":"Amazon","buyLink":"http:\/\/www.last.fm\/affiliate\/byid\/9\/1000343\/1\/ws.track.buylinks.0db875056888d327c24d7a76374733f4","supplierIcon":"http:\/\/cdn.last.fm\/favicons\/amazon.gif","isSearch":"1"},{"supplierName":"eBay","buyLink":"http:\/\/www.last.fm\/affiliate\/byid\/9\/1000343\/90\/ws.track.buylinks.0db875056888d327c24d7a76374733f4","supplierIcon":"","isSearch":"1"}]},"downloads":{"affiliation":[{"supplierName":"7digital","price":{"currency":"GBP","amount":"1.29"},"buyLink":"http:\/\/www.last.fm\/affiliate\/byid\/9\/1000343\/13\/ws.track.buylinks.0db875056888d327c24d7a76374733f4","supplierIcon":"http:\/\/cdn.last.fm\/favicons\/7digital.gif","isSearch":"0"},{"supplierName":"Amazon MP3","price":{"currency":"GBP","amount":"0.69"},"buyLink":"http:\/\/www.last.fm\/affiliate\/byid\/9\/1000343\/44\/ws.track.buylinks.0db875056888d327c24d7a76374733f4","supplierIcon":"http:\/\/cdn.last.fm\/favicons\/amazon-mp3-16x16-a.gif","isSearch":"0"},{"supplierName":"iTunes","price":{"currency":"GBP","amount":"0.99"},"buyLink":"http:\/\/www.last.fm\/affiliate\/byid\/9\/1000343\/24\/ws.track.buylinks.0db875056888d327c24d7a76374733f4","supplierIcon":"http:\/\/cdn.last.fm\/favicons\/itunes16x16.png","isSearch":"0"}]}}}
+
+    http_version: "1.0"

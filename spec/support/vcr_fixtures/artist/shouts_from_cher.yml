@@ -1,0 +1,36 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://ws.audioscrobbler.com:80/2.0/?method=artist.getshouts&artist=Cher&api_key=0db875056888d327c24d7a76374733f4&format=json
+    body: 
+    headers: 
+      accept: 
+      - "*/*"
+      user-agent: 
+      - Ruby
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      date: 
+      - Sun, 03 Oct 2010 20:14:18 GMT
+      server: 
+      - Apache/1.3.39 (Unix)
+      x-proxy-fix-up: 
+      - headers fixed up
+      x-web-node: 
+      - www163
+      cache-control: 
+      - max-age=3600
+      expires: 
+      - Sun, 03 Oct 2010 21:14:19 GMT
+      connection: 
+      - close
+      content-type: 
+      - application/json; charset=utf-8;
+    body: |
+      {"shouts":{"shout":[{"body":"Cher\u2665 ^^","author":"DannyMusic94","date":"Sun, 3 Oct 2010 19:34:41"},{"body":"The only true diva \u2665","author":"nataliston","date":"Sun, 3 Oct 2010 15:45:36"},{"body":"Can't wait to see her in burlesque! [9]","author":"LarkCGN","date":"Sun, 3 Oct 2010 13:47:48"},{"body":"All I really want to do, is baby be friends with you \u266a","author":"MarinaSarkisian","date":"Sat, 2 Oct 2010 12:25:28"},{"body":"http:\/\/twitter.com\/CherLovers   \u2665","author":"MarinaSarkisian","date":"Sat, 2 Oct 2010 12:24:06"},{"body":"<3 <3 <3","author":"AboutMatt","date":"Sat, 2 Oct 2010 00:39:35"},{"body":"TWITTER: http:\/\/twitter.com\/CherLyrics and http:\/\/twitter.com\/CherLTumblr. TUMBLR:http:\/\/cherlovers.tumblr.com\/ :)","author":"nataliston","date":"Fri, 1 Oct 2010 15:15:25"},{"body":"Can't wait to see her in burlesque! [8]","author":"ifitwasnt4rhys","date":"Fri, 1 Oct 2010 14:09:37"},{"body":"Can't wait to see her in burlesque! [7]","author":"whitneyfanfan","date":"Fri, 1 Oct 2010 13:30:27"},{"body":"Strong Enough :D","author":"HectorTB","date":"Fri, 1 Oct 2010 02:34:32"},{"body":"VOTE! PLEASE! http:\/\/www.lastfm.com.br\/music\/Cher\/+images\/52415683 l http:\/\/www.lastfm.com.br\/music\/Cher\/+images\/52415717","author":"nataliston","date":"Fri, 1 Oct 2010 01:56:35"},{"body":"Follow @cher!","author":"AndrewBuzz","date":"Fri, 1 Oct 2010 01:55:25"},{"body":"you got the look that makes me weak \u2665","author":"brunaromano","date":"Wed, 29 Sep 2010 20:57:46"},{"body":"5.000.695 execu\u00e7\u00f5es (568.685 ouvintes) !","author":"DarkLadyCher","date":"Wed, 29 Sep 2010 15:08:54"},{"body":"Can't wait to see her in burlesque! [6]","author":"merymay","date":"Tue, 28 Sep 2010 10:45:00"},{"body":"I've been told I look like a young Cher. Not sure how to take that, hmm.","author":"SeduceTheWeak","date":"Tue, 28 Sep 2010 03:39:16"},{"body":"Can't wait to see her in burlesque! [5]","author":"cdyaro","date":"Mon, 27 Sep 2010 12:01:15"},{"body":"Save Up All Your Tears & I Found Someone <3 <3 <3","author":"Wiegenzombie","date":"Mon, 27 Sep 2010 10:24:56"},{"body":"my diva \u2665","author":"GuilhermeVogue","date":"Sun, 26 Sep 2010 22:04:41"},{"body":"Walking In Memphis \u2665","author":"MarinaSarkisian","date":"Sun, 26 Sep 2010 13:46:04"},{"body":"The Way Of Love \u2665","author":"DouglasLisbon","date":"Sun, 26 Sep 2010 03:30:48"},{"body":"Can't wait to see her in burlesque! (6) \u2665","author":"nataliston","date":"Sun, 26 Sep 2010 03:02:40"},{"body":"<3","author":"alex_sunny","date":"Sat, 25 Sep 2010 18:34:54"},{"body":"Can't wait to see her in burlesque! [5] this movie is gonna be awesome","author":"heyu_","date":"Sat, 25 Sep 2010 18:22:03"},{"body":"Can't wait to see her in burlesque! [4]","author":"MarinaSarkisian","date":"Sat, 25 Sep 2010 14:44:19"},{"body":"Can't wait to see her in burlesque! [3]","author":"lacerdathiago","date":"Sat, 25 Sep 2010 14:39:23"},{"body":"Can't wait to see her in burlesque! [2] *\u00ac*","author":"thi_delicia","date":"Sat, 25 Sep 2010 01:49:58"},{"body":"Can't wait to see her in burlesque!","author":"comingtoyou__","date":"Fri, 24 Sep 2010 19:26:15"},{"body":"Love this photoshoot! *_*  (2)","author":"nataliston","date":"Fri, 24 Sep 2010 15:47:13"},{"body":"Love this photoshoot! *_*","author":"brunaromano","date":"Fri, 24 Sep 2010 14:39:53"},{"body":"Just a small town dude with a big city attitude!","author":"CursedEvil","date":"Fri, 24 Sep 2010 12:37:09"},{"body":"VOTE! \nhttp:\/\/www.lastfm.com.br\/music\/Cher\/+images\/51934357 \n-\n http:\/\/www.lastfm.com.br\/music\/Cher\/+images\/51431439","author":"DarkLadyCher","date":"Thu, 23 Sep 2010 22:48:27"},{"body":"Vote, please! \nhttp:\/\/www.vagalume.com.br\/premio\/blogs\/3ade68b4gab96eda3\/","author":"DarkLadyCher","date":"Thu, 23 Sep 2010 18:41:57"},{"body":"\u2665","author":"GuilhermeVogue","date":"Thu, 23 Sep 2010 18:19:39"},{"body":"\u2665","author":"elizabeth2492","date":"Thu, 23 Sep 2010 17:19:58"},{"body":"\u2665","author":"EricValeev","date":"Thu, 23 Sep 2010 10:41:13"},{"body":"Heart of Stone <3","author":"dolce4","date":"Wed, 22 Sep 2010 17:55:05"},{"body":"Cher is too much for the GaGinha","author":"raaaaul","date":"Tue, 21 Sep 2010 04:27:19"},{"body":"Like the BURLESQUE page on facebook http:\/\/www.facebook.com\/burlesque","author":"nastyboy1009","date":"Mon, 20 Sep 2010 20:00:00"},{"body":"aff jessik.","author":"CherilynSL","date":"Sat, 18 Sep 2010 21:24:58"},{"body":"CHER WAS AMAZING, HOT, GORGEOUS at the VMA *-* [3]","author":"Ulfasso","date":"Sat, 18 Sep 2010 19:31:44"},{"body":"eh eh (:","author":"djosci_coelho","date":"Sat, 18 Sep 2010 05:16:46"},{"body":"Cherry, cherry, boom, boom... ops!","author":"jessikkk","date":"Sat, 18 Sep 2010 05:13:29"},{"body":"Lady Gaga feat. Cher - I'm transsexual","author":"Renier3","date":"Fri, 17 Sep 2010 13:31:25"},{"body":"god","author":"tomcardo","date":"Fri, 17 Sep 2010 04:09:24"},{"body":"http:\/\/www.lastfm.com.br\/music\/Cher\/+images\/49248521","author":"djosci_coelho","date":"Thu, 16 Sep 2010 15:56:59"},{"body":"I love this picture \u2665","author":"nataliston","date":"Wed, 15 Sep 2010 03:07:14"},{"body":"Icon.","author":"juninho_hjd","date":"Wed, 15 Sep 2010 03:06:50"},{"body":"http:\/\/www.lastfm.com.br\/music\/Cher\/+images\/49101809 VOTE!","author":"djosci_coelho","date":"Wed, 15 Sep 2010 02:26:52"},{"body":"CHER WAS AMAZING, HOT, GORGEOUS at the VMA *-* (2)","author":"nataliston","date":"Tue, 14 Sep 2010 19:01:54"}],"@attr":{"artist":"Cher","total":"1491","page":"1","perPage":"50","totalPages":"30"}}}
+
+    http_version: "1.0"

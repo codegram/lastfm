@@ -1,0 +1,36 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://ws.audioscrobbler.com:80/2.0/?method=track.getinfo&api_key=0db875056888d327c24d7a76374733f4&artist=radiohead&country=united%20kingdom&format=json&track=creep
+    body: 
+    headers: 
+      accept: 
+      - "*/*"
+      user-agent: 
+      - Ruby
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      date: 
+      - Sun, 03 Oct 2010 20:53:47 GMT
+      server: 
+      - Apache/1.3.39 (Unix)
+      x-proxy-fix-up: 
+      - headers fixed up
+      x-web-node: 
+      - www117
+      cache-control: 
+      - max-age=604800
+      expires: 
+      - Sun, 10 Oct 2010 20:53:47 GMT
+      connection: 
+      - close
+      content-type: 
+      - application/json; charset=utf-8;
+    body: |
+      {"track":{"id":"1000343","name":"Creep","mbid":"","url":"http:\/\/www.last.fm\/music\/Radiohead\/_\/Creep","duration":"237000","streamable":{"#text":"0","fulltrack":"0"},"listeners":"790415","playcount":"5878849","artist":{"name":"Radiohead","mbid":"a74b1b7f-71a5-4011-9441-d0b5e4122711","url":"http:\/\/www.last.fm\/music\/Radiohead"},"album":{"artist":"Radiohead","title":"Pablo Honey","mbid":"661e10a1-8a01-4201-8f1b-e3a42684739d","url":"http:\/\/www.last.fm\/music\/Radiohead\/Pablo+Honey","image":[{"#text":"http:\/\/userserve-ak.last.fm\/serve\/64s\/49158523.png","size":"small"},{"#text":"http:\/\/userserve-ak.last.fm\/serve\/126\/49158523.png","size":"medium"},{"#text":"http:\/\/userserve-ak.last.fm\/serve\/174s\/49158523.png","size":"large"},{"#text":"http:\/\/userserve-ak.last.fm\/serve\/300x300\/49158523.png","size":"extralarge"}],"@attr":{"position":"2"}},"toptags":{"tag":[{"name":"alternative","url":"http:\/\/www.last.fm\/tag\/alternative"},{"name":"rock","url":"http:\/\/www.last.fm\/tag\/rock"},{"name":"alternative rock","url":"http:\/\/www.last.fm\/tag\/alternative%20rock"},{"name":"radiohead","url":"http:\/\/www.last.fm\/tag\/radiohead"},{"name":"indie","url":"http:\/\/www.last.fm\/tag\/indie"}]},"wiki":{"published":"Mon, 30 Nov 2009 02:17:04 +0000","summary":"&quot;Creep&quot; is the first single released by the English alternative rock band Radiohead, and is a track on their debut album <a title=\"Radiohead - Pablo Honey\" href=\"http:\/\/www.last.fm\/music\/Radiohead\/Pablo+Honey\" class=\"bbcode_album\">Pablo Honey<\/a> (1993). It was written by the band's singer, <a href=\"http:\/\/www.last.fm\/music\/Thom+Yorke\" class=\"bbcode_artist\">Thom Yorke<\/a>, and released in the United Kingdom initially in September 1992. When it was first given limited release, however, Radio 1 found it &quot;too depressing&quot;, and removed it from their playlist after airing it only twice. However, it subsequently became one of the band's biggest hits, and became their only Top 40 hit in the United States until 2008's &quot;<a href=\"http:\/\/www.last.fm\/music\/Radiohead\/_\/Nude\">Nude<\/a>&quot;, despite the success of their future albums in the country.","content":"&quot;Creep&quot; is the first single released by the English alternative rock band Radiohead, and is a track on their debut album <a title=\"Radiohead - Pablo Honey\" href=\"http:\/\/www.last.fm\/music\/Radiohead\/Pablo+Honey\" class=\"bbcode_album\">Pablo Honey<\/a> (1993). It was written by the band's singer, <a href=\"http:\/\/www.last.fm\/music\/Thom+Yorke\" class=\"bbcode_artist\">Thom Yorke<\/a>, and released in the United Kingdom initially in September 1992. When it was first given limited release, however, Radio 1 found it &quot;too depressing&quot;, and removed it from their playlist after airing it only twice. However, it subsequently became one of the band's biggest hits, and became their only Top 40 hit in the United States until 2008's &quot;<a href=\"http:\/\/www.last.fm\/music\/Radiohead\/_\/Nude\">Nude<\/a>&quot;, despite the success of their future albums in the country. The song re-entered the UK chart at number 37 on 8 June 2008, as a result of downloads, following the release of Radiohead's <a title=\"Radiohead - The Best Of\" href=\"http:\/\/www.last.fm\/music\/Radiohead\/The+Best+Of\" class=\"bbcode_album\">The Best Of<\/a> album earlier that month.\n \n <strong>Covers<\/strong>\n \n In April 2008, <a href=\"http:\/\/www.last.fm\/music\/Prince\" class=\"bbcode_artist\">Prince<\/a> covered 'Creep' at Coachella. This version was captured on a video from a concert-goer's cell phone, and promptly uploaded to Youtube. However, it was quickly taken down at Prince's request. After finding out about the blocking, Thom Yorke was quoted as saying, &quot;Well, tell him to unblock it. It's our song.&quot;\n \n <a href=\"http:\/\/www.last.fm\/music\/Weezer\" class=\"bbcode_artist\">Weezer<\/a> covered &quot;Creep&quot; during their 2008 Hootenanny Tour with bassist Scott Shriner on lead vocals. Weezer frontman Rivers Cuomo stated that the song was picked to cover because &quot;it's incredible what they do with four chords, over and over.&quot;\n \n <a href=\"http:\/\/www.last.fm\/music\/Korn\" class=\"bbcode_artist\">Korn<\/a> covered &quot;Creep&quot; on their unplugged album.\n \n <a href=\"http:\/\/www.last.fm\/music\/Anberlin\" class=\"bbcode_artist\">Anberlin<\/a> covered &quot;Creep&quot; in <a title=\"Anberlin - Lost Songs\" href=\"http:\/\/www.last.fm\/music\/Anberlin\/Lost+Songs\" class=\"bbcode_album\">Lost Songs<\/a>.\n \n <a href=\"http:\/\/www.last.fm\/music\/+noredirect\/Scarling\" class=\"bbcode_artist\">Scarling<\/a> covered &quot;Creep&quot; on their single of <a title=\"Scarling - Band Aid Covers the Bullet Hole\" href=\"http:\/\/www.last.fm\/music\/Scarling\/Band+Aid+Covers+the+Bullet+Hole\" class=\"bbcode_album\">Band Aid Covers the Bullet Hole<\/a>.\n \n <a href=\"http:\/\/www.last.fm\/music\/Amanda+Palmer\" class=\"bbcode_artist\">Amanda Palmer<\/a> of <a href=\"http:\/\/www.last.fm\/music\/The+Dresden+Dolls\" class=\"bbcode_artist\">The Dresden Dolls<\/a> commonly covers &quot;Creep&quot; in concert, but her most popular version of this is her preforming the song in a crowded bar which is available on her personal Youtube account.\n \n <a href=\"http:\/\/www.last.fm\/music\/Sentenced\" class=\"bbcode_artist\">Sentenced<\/a> covered it on the special edition of their 1998 album <a title=\"Sentenced - Frozen\" href=\"http:\/\/www.last.fm\/music\/Sentenced\/Frozen\" class=\"bbcode_album\">Frozen<\/a>."}}}
+
+    http_version: "1.0"

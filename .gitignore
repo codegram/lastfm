@@ -1,0 +1,4 @@
+pkg/*
+*.gem
+.bundle
+spec/support/api_key.yml

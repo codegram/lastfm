@@ -1,0 +1,36 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://ws.audioscrobbler.com:80/2.0/?method=event.getshouts&event=328799&api_key=0db875056888d327c24d7a76374733f4&format=json
+    body: 
+    headers: 
+      accept: 
+      - "*/*"
+      user-agent: 
+      - Ruby
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      date: 
+      - Sun, 03 Oct 2010 20:38:06 GMT
+      server: 
+      - Apache/1.3.39 (Unix)
+      x-proxy-fix-up: 
+      - headers fixed up
+      x-web-node: 
+      - www150
+      cache-control: 
+      - max-age=3600
+      expires: 
+      - Sun, 03 Oct 2010 21:38:06 GMT
+      connection: 
+      - close
+      content-type: 
+      - application/json; charset=utf-8;
+    body: |
+      {"shouts":{"shout":[{"body":"test","author":"kaypey","date":"Tue, 28 Apr 2009 05:35:11"},{"body":"I managed to hear a recorded version of the music performed on CD, and the music in this live event was better performed. I'm happy about that :D I think the CD was recorded when the play was first performed.","author":"Armenra","date":"Tue, 22 Jul 2008 02:45:51"},{"body":"'gree Armenra.","author":"Ekpyrotic","date":"Fri, 18 Jul 2008 21:33:38"},{"body":"The Music was excellent, its just a shame it wasnt the actual theatre production","author":"Armenra","date":"Fri, 13 Jun 2008 12:11:57"},{"body":"My first classical event. Can't wait.","author":"Ekpyrotic","date":"Mon, 28 Apr 2008 17:07:47"},{"body":"I'd love to attend.","author":"Thorpe","date":"Mon, 25 Feb 2008 03:44:51"}],"@attr":{"event":"328799","total":"6"}}}
+
+    http_version: "1.0"

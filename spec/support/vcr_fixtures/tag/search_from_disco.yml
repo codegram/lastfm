@@ -1,0 +1,34 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://ws.audioscrobbler.com:80/2.0/?method=tag.getsearch&api_key=0db875056888d327c24d7a76374733f4&format=json&tag=disco
+    body: 
+    headers: 
+      accept: 
+      - "*/*"
+      user-agent: 
+      - Ruby
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      date: 
+      - Sun, 03 Oct 2010 20:51:13 GMT
+      server: 
+      - Apache/1.3.39 (Unix)
+      x-proxy-fix-up: 
+      - headers fixed up
+      x-web-node: 
+      - www168
+      set-cookie: 
+      - AnonSession=cc56ea78f1d392cc4e8f7709b21c06f4-23c050168319fd654e070babf759203bfaa55df44d82e998bbeba404d0f2c17e; expires=Thu, 03-Sep-2020 08:51:13 GMT; path=/; domain=.audioscrobbler.com
+      connection: 
+      - close
+      content-type: 
+      - application/json; charset=utf-8;
+    body: |
+      {"results":{"opensearch:Query":{"#text":"","role":"request","searchTerms":"disco","startPage":"1"},"opensearch:totalResults":"3946","opensearch:startIndex":"0","opensearch:itemsPerPage":"30","tagmatches":{"tag":[{"name":"disco","count":"112792","url":"www.last.fm\/tag\/disco"},{"name":"italo disco","count":"12642","url":"www.last.fm\/tag\/italo%20disco"},{"name":"disco house","count":"3860","url":"www.last.fm\/tag\/disco%20house"},{"name":"panic at the disco","count":"2354","url":"www.last.fm\/tag\/panic%20at%20the%20disco"},{"name":"disco punk","count":"2478","url":"www.last.fm\/tag\/disco%20punk"},{"name":"space disco","count":"3160","url":"www.last.fm\/tag\/space%20disco"},{"name":"indie disco","count":"3042","url":"www.last.fm\/tag\/indie%20disco"},{"name":"disco funk","count":"2373","url":"www.last.fm\/tag\/disco%20funk"},{"name":"disco polo","count":"1102","url":"www.last.fm\/tag\/disco%20polo"},{"name":"nu disco","count":"2202","url":"www.last.fm\/tag\/nu%20disco"},{"name":"italo-disco","count":"1738","url":"www.last.fm\/tag\/italo-disco"},{"name":"disco-punk","count":"659","url":"www.last.fm\/tag\/disco-punk"},{"name":"euro disco","count":"871","url":"www.last.fm\/tag\/euro%20disco"},{"name":"electro disco","count":"1678","url":"www.last.fm\/tag\/electro%20disco"},{"name":"70s disco","count":"765","url":"www.last.fm\/tag\/70s%20disco"},{"name":"disco pop","count":"933","url":"www.last.fm\/tag\/disco%20pop"},{"name":"panic! at the disco","count":"407","url":"www.last.fm\/tag\/panic%21%20at%20the%20disco"},{"name":"disco rock","count":"313","url":"www.last.fm\/tag\/disco%20rock"},{"name":"disco music","count":"884","url":"www.last.fm\/tag\/disco%20music"},{"name":"disco dance","count":"1242","url":"www.last.fm\/tag\/disco%20dance"},{"name":"disco metal","count":"310","url":"www.last.fm\/tag\/disco%20metal"},{"name":"nu-disco","count":"505","url":"www.last.fm\/tag\/nu-disco"},{"name":"evil disco","count":"255","url":"www.last.fm\/tag\/evil%20disco"},{"name":"simian mobile disco","count":"1811","url":"www.last.fm\/tag\/simian%20mobile%20disco"},{"name":"cosmic disco","count":"381","url":"www.last.fm\/tag\/cosmic%20disco"},{"name":"death disco","count":"300","url":"www.last.fm\/tag\/death%20disco"},{"name":"gay disco","count":"357","url":"www.last.fm\/tag\/gay%20disco"},{"name":"indie-disco","count":"240","url":"www.last.fm\/tag\/indie-disco"},{"name":"disco trance","count":"1152","url":"www.last.fm\/tag\/disco%20trance"},{"name":"80s disco","count":"381","url":"www.last.fm\/tag\/80s%20disco"}]},"@attr":{"for":"disco"}}}
+
+    http_version: "1.0"

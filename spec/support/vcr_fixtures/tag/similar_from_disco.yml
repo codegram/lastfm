@@ -1,0 +1,32 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://ws.audioscrobbler.com:80/2.0/?method=tag.getsimilar&api_key=0db875056888d327c24d7a76374733f4&format=json&tag=disco
+    body: 
+    headers: 
+      accept: 
+      - "*/*"
+      user-agent: 
+      - Ruby
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      date: 
+      - Sun, 03 Oct 2010 20:51:00 GMT
+      server: 
+      - Apache/1.3.39 (Unix)
+      x-proxy-fix-up: 
+      - headers fixed up
+      x-web-node: 
+      - www71
+      connection: 
+      - close
+      content-type: 
+      - application/json; charset=utf-8;
+    body: |
+      {"similartags":{"tag":[{"name":"italo disco","url":"http:\/\/www.last.fm\/tag\/italo%20disco","streamable":"1"},{"name":"70s","url":"http:\/\/www.last.fm\/tag\/70s","streamable":"1"},{"name":"funk","url":"http:\/\/www.last.fm\/tag\/funk","streamable":"1"},{"name":"gay","url":"http:\/\/www.last.fm\/tag\/gay","streamable":"1"},{"name":"disco funk","url":"http:\/\/www.last.fm\/tag\/disco%20funk","streamable":"1"},{"name":"italo","url":"http:\/\/www.last.fm\/tag\/italo","streamable":"1"},{"name":"hi-nrg","url":"http:\/\/www.last.fm\/tag\/hi-nrg","streamable":"1"},{"name":"discotheque","url":"http:\/\/www.last.fm\/tag\/discotheque","streamable":"1"},{"name":"italo-disco","url":"http:\/\/www.last.fm\/tag\/italo-disco","streamable":"1"},{"name":"dance","url":"http:\/\/www.last.fm\/tag\/dance","streamable":"1"},{"name":"80s","url":"http:\/\/www.last.fm\/tag\/80s","streamable":"1"},{"name":"eurodance","url":"http:\/\/www.last.fm\/tag\/eurodance","streamable":"1"},{"name":"space disco","url":"http:\/\/www.last.fm\/tag\/space%20disco","streamable":"1"},{"name":"soul","url":"http:\/\/www.last.fm\/tag\/soul","streamable":"1"},{"name":"party","url":"http:\/\/www.last.fm\/tag\/party","streamable":"1"},{"name":"old school soul","url":"http:\/\/www.last.fm\/tag\/old%20school%20soul","streamable":"1"},{"name":"funky","url":"http:\/\/www.last.fm\/tag\/funky","streamable":"1"},{"name":"motown","url":"http:\/\/www.last.fm\/tag\/motown","streamable":"1"},{"name":"abba","url":"http:\/\/www.last.fm\/tag\/abba","streamable":"1"},{"name":"bee gees","url":"http:\/\/www.last.fm\/tag\/bee%20gees","streamable":"1"},{"name":"club","url":"http:\/\/www.last.fm\/tag\/club","streamable":"1"},{"name":"philly soul","url":"http:\/\/www.last.fm\/tag\/philly%20soul","streamable":"1"},{"name":"70s disco","url":"http:\/\/www.last.fm\/tag\/70s%20disco","streamable":"1"},{"name":"salsoul","url":"http:\/\/www.last.fm\/tag\/salsoul","streamable":"1"},{"name":"old school dance","url":"http:\/\/www.last.fm\/tag\/old%20school%20dance","streamable":"1"},{"name":"80s groove","url":"http:\/\/www.last.fm\/tag\/80s%20groove","streamable":"1"},{"name":"pop","url":"http:\/\/www.last.fm\/tag\/pop","streamable":"1"},{"name":"house","url":"http:\/\/www.last.fm\/tag\/house","streamable":"1"},{"name":"paradise garage","url":"http:\/\/www.last.fm\/tag\/paradise%20garage","streamable":"1"},{"name":"1979","url":"http:\/\/www.last.fm\/tag\/1979","streamable":"1"},{"name":"larry levan","url":"http:\/\/www.last.fm\/tag\/larry%20levan","streamable":"1"},{"name":"schlager","url":"http:\/\/www.last.fm\/tag\/schlager","streamable":"1"},{"name":"oldies","url":"http:\/\/www.last.fm\/tag\/oldies","streamable":"1"},{"name":"modern talking","url":"http:\/\/www.last.fm\/tag\/modern%20talking","streamable":"1"},{"name":"madonna","url":"http:\/\/www.last.fm\/tag\/madonna","streamable":"1"},{"name":"disco music","url":"http:\/\/www.last.fm\/tag\/disco%20music","streamable":"1"},{"name":"groove","url":"http:\/\/www.last.fm\/tag\/groove","streamable":"1"},{"name":"disco polo","url":"http:\/\/www.last.fm\/tag\/disco%20polo","streamable":"1"},{"name":"funky house","url":"http:\/\/www.last.fm\/tag\/funky%20house","streamable":"1"},{"name":"new york","url":"http:\/\/www.last.fm\/tag\/new%20york","streamable":"1"},{"name":"old school","url":"http:\/\/www.last.fm\/tag\/old%20school","streamable":"1"},{"name":"europop","url":"http:\/\/www.last.fm\/tag\/europop","streamable":"1"},{"name":"sexy","url":"http:\/\/www.last.fm\/tag\/sexy","streamable":"1"},{"name":"plastic pop","url":"http:\/\/www.last.fm\/tag\/plastic%20pop","streamable":"1"},{"name":"eurodisco","url":"http:\/\/www.last.fm\/tag\/eurodisco","streamable":"1"},{"name":"disco house","url":"http:\/\/www.last.fm\/tag\/disco%20house","streamable":"1"},{"name":"jazz funk","url":"http:\/\/www.last.fm\/tag\/jazz%20funk","streamable":"1"},{"name":"boney m","url":"http:\/\/www.last.fm\/tag\/boney%20m","streamable":"1"},{"name":"dfa","url":"http:\/\/www.last.fm\/tag\/dfa","streamable":"1"},{"name":"sampled","url":"http:\/\/www.last.fm\/tag\/sampled","streamable":"1"}],"@attr":{"tag":"disco"}}}
+
+    http_version: "1.0"
