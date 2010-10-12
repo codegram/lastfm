@@ -1,0 +1,32 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://ws.audioscrobbler.com:80/2.0/?method=tasteometer.getcompare&api_key=0db875056888d327c24d7a76374733f4&type1=user&type2=user&value1=txusfm&value2=josepjaume&format=json
+    body: 
+    headers: 
+      accept: 
+      - "*/*"
+      user-agent: 
+      - Ruby
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      date: 
+      - Tue, 12 Oct 2010 10:58:50 GMT
+      server: 
+      - Apache/1.3.39 (Unix)
+      x-proxy-fix-up: 
+      - headers fixed up
+      x-web-node: 
+      - www159
+      connection: 
+      - close
+      content-type: 
+      - application/json; charset=utf-8;
+    body: |
+      {"comparison":{"result":{"score":"0.83175492286682","artists":{"artist":[{"name":"Ratatat","url":"http:\/\/www.last.fm\/music\/Ratatat","image":[{"#text":"http:\/\/userserve-ak.last.fm\/serve\/126\/65954.jpg","size":"large"},{"#text":"http:\/\/userserve-ak.last.fm\/serve\/64\/65954.jpg","size":"medium"},{"#text":"http:\/\/userserve-ak.last.fm\/serve\/34\/65954.jpg","size":"small"},{"#text":"http:\/\/userserve-ak.last.fm\/serve\/252\/65954.jpg","size":"extralarge"}]},{"name":"Chris Cornell","url":"http:\/\/www.last.fm\/music\/Chris+Cornell","image":[{"#text":"http:\/\/userserve-ak.last.fm\/serve\/126\/427945.jpg","size":"large"},{"#text":"http:\/\/userserve-ak.last.fm\/serve\/64\/427945.jpg","size":"medium"},{"#text":"http:\/\/userserve-ak.last.fm\/serve\/34\/427945.jpg","size":"small"},{"#text":"http:\/\/userserve-ak.last.fm\/serve\/252\/427945.jpg","size":"extralarge"}]},{"name":"Darwin Deez","url":"http:\/\/www.last.fm\/music\/Darwin+Deez","image":[{"#text":"http:\/\/userserve-ak.last.fm\/serve\/126\/43591551.jpg","size":"large"},{"#text":"http:\/\/userserve-ak.last.fm\/serve\/64\/43591551.jpg","size":"medium"},{"#text":"http:\/\/userserve-ak.last.fm\/serve\/34\/43591551.jpg","size":"small"},{"#text":"http:\/\/userserve-ak.last.fm\/serve\/252\/43591551.jpg","size":"extralarge"}]},{"name":"The Temper Trap","url":"http:\/\/www.last.fm\/music\/The+Temper+Trap","image":[{"#text":"http:\/\/userserve-ak.last.fm\/serve\/126\/39208173.png","size":"large"},{"#text":"http:\/\/userserve-ak.last.fm\/serve\/64\/39208173.png","size":"medium"},{"#text":"http:\/\/userserve-ak.last.fm\/serve\/34\/39208173.png","size":"small"},{"#text":"http:\/\/userserve-ak.last.fm\/serve\/252\/39208173.png","size":"extralarge"}]},{"name":"MSTRKRFT","url":"http:\/\/www.last.fm\/music\/MSTRKRFT","image":[{"#text":"http:\/\/userserve-ak.last.fm\/serve\/126\/8477385.jpg","size":"large"},{"#text":"http:\/\/userserve-ak.last.fm\/serve\/64\/8477385.jpg","size":"medium"},{"#text":"http:\/\/userserve-ak.last.fm\/serve\/34\/8477385.jpg","size":"small"},{"#text":"http:\/\/userserve-ak.last.fm\/serve\/252\/8477385.jpg","size":"extralarge"}]}],"@attr":{"matches":"10"}}},"input":{"user":[{"name":"txusfm","url":"http:\/\/www.last.fm\/user\/txusfm","image":[{"#text":"","size":"large"},{"#text":"","size":"medium"},{"#text":"","size":"small"},{"#text":"","size":"extralarge"}]},{"name":"josepjaume","url":"http:\/\/www.last.fm\/user\/josepjaume","image":[{"#text":"http:\/\/userserve-ak.last.fm\/serve\/126\/616413.jpg","size":"large"},{"#text":"http:\/\/userserve-ak.last.fm\/serve\/64\/616413.jpg","size":"medium"},{"#text":"http:\/\/userserve-ak.last.fm\/serve\/34\/616413.jpg","size":"small"},{"#text":"http:\/\/userserve-ak.last.fm\/serve\/252\/616413.jpg","size":"extralarge"}]}]}}}
+
+    http_version: "1.0"

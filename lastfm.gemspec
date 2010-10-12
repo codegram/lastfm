@@ -16,8 +16,8 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency "crack"
 
-  s.add_development_dependency "bundler", ">= 1.0.0"
-  s.add_development_dependency "rspec", ">= 2.0.0.beta.22"
+  s.add_development_dependency "bundler", ">= 1.0.2"
+  s.add_development_dependency "rspec", ">= 2.0.0"
   s.add_development_dependency "fakeweb"
   s.add_development_dependency "vcr"
 

@@ -68,6 +68,15 @@ module LastFM
         end
       end
 
+      context "tasteometer" do
+        %w{compare}.each do |element|
+          specify "#get_#{element}_from_tasteometer" do
+            VCR.insert_cassette "tasteometer/#{element}_txusfm_and_josepjaume", :record => :new_episodes
+            expect {connection.send(:"get_#{element}_from_tasteometer", :type1 => 'user', :type2 => 'user', :value1 => 'txusfm', :value2 => 'josepjaume')}.to_not raise_error
+          end
+        end
+      end
+
       context "track" do
         %w{buylinks info similar topfans toptags search}.each do |element|
           specify "#get_#{element}_from_track" do
