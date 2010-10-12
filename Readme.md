@@ -31,6 +31,7 @@ modules of its API:
 * Geo
 * Group
 * Tag
+* Tasteometer
 * Track
 * Venue
 
