@@ -6,7 +6,7 @@ anyway, though (you can get one for free at [Last.fm](http://www.last.fm/api/acc
 
 Returns a hash with all the entries you requested.
 
-Compatible with Ruby 1.8, 1.9 and JRuby.
+Compatible with Ruby 1.8, 1.9, JRuby, 1.5.3 and Rubinius 1.1.
 
 ## Usage
 

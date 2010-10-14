@@ -20,7 +20,10 @@ GEM
     rspec-mocks (2.0.0)
       rspec-core (= 2.0.0)
       rspec-expectations (= 2.0.0)
-    vcr (1.1.2)
+    simplecov (0.3.6)
+      simplecov-html (>= 0.3.7)
+    simplecov-html (0.3.8)
+    vcr (1.2.0)
 
 PLATFORMS
   java
@@ -32,4 +35,5 @@ DEPENDENCIES
   fakeweb
   lastfm!
   rspec (>= 2.0.0)
+  simplecov
   vcr

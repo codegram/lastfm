@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ['info@codegram.com']
   s.homepage    = "http://github.com/codegram/lastfm"
   s.summary     = "Simple LastFM client"
-  s.description = "Simple LatFM client"
+  s.description = "Simple LastFM client"
 
   s.required_rubygems_version = ">= 1.3.6"
   s.rubyforge_project         = "lastfm"
@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rspec", ">= 2.0.0"
   s.add_development_dependency "fakeweb"
   s.add_development_dependency "vcr"
+  s.add_development_dependency "simplecov"
 
   s.files        = `git ls-files`.split("\n")
   s.executables  = `git ls-files`.split("\n").map{|f| f =~ /^bin\/(.*)/ ? $1 : nil}.compact

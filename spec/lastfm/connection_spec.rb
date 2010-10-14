@@ -8,6 +8,12 @@ module LastFM
       LastFM.connect(api_key)
     end
 
+    describe "unobtrusive method_missing" do
+      it "ignores any method that doesn't look like one of the API" do
+        expect{connection.send(:some_method)}.to raise_error(NoMethodError)
+      end
+    end
+
     describe "API methods (which do not require authentication)" do
 
       after(:each) do
