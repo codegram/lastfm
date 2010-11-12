@@ -33,12 +33,8 @@ module LastFM
       args = "?method=#{resource}.#{method}&api_key=#{@key}#{formatted_options}"
 
       url = URI.parse(API_URL + "/" + args)
-      req = Net::HTTP::Get.new(url.path + args)
-      res = Net::HTTP.start(url.host, url.port) {|http|
-        http.request(req)
-      }
-      
-      Crack::JSON.parse(res.body)
+      response = Net::HTTP.get(url)
+      Crack::JSON.parse(response)
     end
   end
 end

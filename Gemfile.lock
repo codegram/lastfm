@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    lastfm (1.0.1)
+    lastfm (1.0.2)
       crack
 
 GEM
