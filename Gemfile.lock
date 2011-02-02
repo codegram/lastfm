@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    lastfm (1.0.2)
+    lastfm (1.0.3)
       crack
 
 GEM
@@ -31,7 +31,6 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (>= 1.0.2)
-  crack
   fakeweb
   lastfm!
   rspec (>= 2.0.0)
